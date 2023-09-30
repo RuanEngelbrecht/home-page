@@ -13,9 +13,6 @@ export default function Navigation() {
         <li>
           <NavigationLink href="/blog">Blog</NavigationLink>
         </li>
-        <li>
-          <NavigationLink href="/projects">Projects</NavigationLink>
-        </li>
       </ul>
     </nav>
   );

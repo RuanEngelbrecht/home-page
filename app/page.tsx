@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import profile from '@/assets/images/profile.jpg';
+import { Github, Twitter } from 'lucide-react';
+import SocialButton from '@/components/SocialButton';
 
 export default function Home() {
   return (
@@ -8,8 +10,8 @@ export default function Home() {
         <Image
           className="rounded-2xl ring-2 ring-white shadow-xl shadow-white/20"
           src={profile}
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           alt="Profile image"
           placeholder="blur"
           quality={60}
@@ -19,6 +21,16 @@ export default function Home() {
           <p className="text-xl font-mono text-center text-white/40">
             {'<Software Engineer />'}
           </p>
+        </div>
+        <div className="flex flex-row justify-between items-center gap-4">
+          <SocialButton
+            icon={Github}
+            href="https://github.com/RuanEngelbrecht"
+          />
+          <SocialButton
+            icon={Twitter}
+            href="https://twitter.com/ruanglebrackets"
+          />
         </div>
       </div>
     </main>
